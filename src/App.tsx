@@ -4,6 +4,7 @@ import { TaskDivider } from './components/TaskDivider';
 import { Task2 } from './views/Task2';
 
 import './App.css';
+import { Task3 } from './views/Task3';
 
 function App() {
   const {
@@ -13,6 +14,9 @@ function App() {
     },
     task2: {
       products
+    },
+    task3: {
+      blocks,
     }
   } = useFakeApi();
 
@@ -22,6 +26,8 @@ function App() {
       <Task1 description={description} accordions={accordions} />
       <TaskDivider title='Задание 2' />
       <Task2 products={products} />
+      <TaskDivider title='Задание 3' />
+      <Task3 blocks={blocks} />
     </div>
   );
 }

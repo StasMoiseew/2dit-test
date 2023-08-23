@@ -74,3 +74,10 @@ td,th{padding:0}
    url("./assets/fonts/Paragon/Parangon530C.ttf") format("truetype");
   font-weight: 700;
 }
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: local("HelveticaNeue"),
+   url("./assets/fonts/HelveticaNeueCyr-Roman.ttf") format("truetype");
+  font-weight: 400;
+}

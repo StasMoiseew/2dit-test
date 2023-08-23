@@ -7,6 +7,10 @@
   justify-content: center;
   padding: 25px 150px;
 
+  @media (max-width:1100px) {
+    padding: 25px 30px;
+  }
+
   font-family: 'Lato', Arial, sans-serif;
 }
 

@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import { Product, Task1Accordion } from "../models";
+import { Product, Task1Accordion, Task3Block } from "../models";
 import { fakeApi } from "../fakeApi";
 
 export const useFakeApi = () => {
   const [task1Desc, setTask1Desc] = useState('');
   const [task1accordions, setTask1accordions] = useState<Task1Accordion[]>([]);
   const [products, setProducts] = useState<Product[]>([]);
+  const [task3Blocks, setTask3Blocks] = useState<Task3Block[]>([]);
 
   useEffect(() => {
     // Представим, что здесь у нас запрос к API Wordpress:
@@ -21,6 +22,10 @@ export const useFakeApi = () => {
       .then(response => {
         setProducts(response);
       })
+    fakeApi.getTask3Block()
+      .then(response => {
+        setTask3Blocks(response);
+      })
   }, []);
 
   return {
@@ -30,6 +35,9 @@ export const useFakeApi = () => {
     },
     task2: {
       products,
+    },
+    task3: {
+      blocks: task3Blocks,
     }
   }
 }

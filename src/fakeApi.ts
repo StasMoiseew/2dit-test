@@ -1,4 +1,4 @@
-import { Product, Task1Accordion } from "./models";
+import { Product, Task1Accordion, Task3Block } from "./models";
 
 const fakeData = {
   task1response: `<p>Когда застройщик нарушает сроки сдачи по ДДУ, вы как дольщик имеете право требовать неустойку за просрочку, а также компенсацию убытков, вызванных этой просрочкой.</p>
@@ -80,6 +80,20 @@ const fakeData = {
       category: 'Кресла театральные',
     },
   ] as Product[],
+  task3blocks: [
+    {
+      index: 1,
+      title: 'С расчетного счета компании',
+      description: `Diam aliquam quis blandit sollicitudin sit ut venenatis dictum fusce gravida, porta commodo natoque tristique magna massa laoreet luctus. Ligula per justo condimentum et ut dignissim ipsum, consequat tristique sollicitudin convallis bibendum risus lorem nostra, cubilia purus odio tincidunt amet euismod. Luctus nascetur urna adipiscing nisl libero bibendum maecenas accumsan mi, ligula consectetur congue nam magnis posuere purus. Himenaeos habitasse nunc sociosqu erat aliquam class justo porta dictumst, pulvinar id dignissim facilisi dolor tincidunt in non tellus, nam posuere laoreet turpis diam ut placerat lacus. Facilisi nec sagittis interdum blandit urna turpis sociosqu risus, viverra class odio aliquet cras morbi nunc egestas convallis, habitasse mollis mi maximus donec congue commodo. Rutrum  turpis diam ut placerat lacus. Facilisi nec sagittis interdum blandit urna turpis sociosqu risus, viverra class odio aliquet cras morbi nunc egestas convallis, habitasse mollis mi maximus donec congue commodo. Rutrum `,
+      imageUrl: 'https://i.ibb.co/1JSNm3j/jason-dent-3w-PJxh-pi-Rw-unsplash-1.png',
+    },
+    {
+      index: 2,
+      title: 'С карты через онлайн банк физлица или в отделении банка',
+      description: `Diam aliquam quis blandit sollicitudin sit ut venenatis dictum fusce gravida, porta commodo natoque tristique magna massa laoreet luctus. Ligula per justo condimentum et ut dignissim ipsum, consequat tristique sollicitudin convallis bibendum risus lorem nostra, cubilia purus odio tincidunt amet euismod. Luctus nascetur urna adipiscing nisl libero bibendum maecenas accumsan mi, ligula consectetur congue nam magnis posuere purus. Himenaeos habitasse nunc sociosqu erat aliquam class justo porta dictumst, pulvinar id dignissim facilisi dolor tincidunt in non tellus, nam posuere laoreet turpis diam ut placerat lacus.`,
+      imageUrl: 'https://i.ibb.co/yVLRjDS/jason-dent-3w-PJxh-pi-Rw-unsplash-1-1.png',
+    }
+  ] as Task3Block[],
 }
 
 export const fakeApi = {
@@ -93,6 +107,10 @@ export const fakeApi = {
   },
   getProducts: async (): Promise<Product[]> => {
     const response = await fakeData.products;
+    return response;
+  },
+  getTask3Block: async (): Promise<Task3Block[]> => {
+    const response = await fakeData.task3blocks;
     return response;
   }
 }

@@ -14,3 +14,10 @@ export interface Product {
   isNew?: boolean;
   onStorage?: boolean;
 }
+
+export interface Task3Block {
+  title: string;
+  index: number;
+  description: string;
+  imageUrl: string;
+}
