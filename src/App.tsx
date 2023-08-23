@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import { Task1 } from './views/Task1';
+import { fakeApi } from './fakeApi';
+import { Task1Accordion } from './models';
 
 function App() {
+  const [task1Desc, setTask1Desc] = useState('');
+  const [task1accordions, setTask1accordions] = useState<Task1Accordion[]>([]);
+
+  useEffect(() => {
+    // Представим, что здесь у нас запрос к API Wordpress:
+    fakeApi.task1request()
+      .then(response => {
+        setTask1Desc(response);
+      });
+    fakeApi.task1accordionsRequest()
+      .then(response => {
+        setTask1accordions(response);
+      })
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Task1 description={task1Desc} accordions={task1accordions} />
     </div>
   );
 }

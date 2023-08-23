@@ -1,0 +1,40 @@
+.accordion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion__button {
+  width: 100%;
+  border: 1px solid #C6CDDA;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background: none;
+}
+
+.accordion__title {
+  font-weight: 700;
+  font-size: 15px;
+  color: #283F75;
+}
+
+.accordion__icon,
+.accordion__description-wrapper {
+  transition: transform .3s ease;
+}
+
+.accordion__icon_opened {
+  transform: rotate(-180deg);
+}
+
+.accordion__description-wrapper {
+  padding-top: 15px;
+  display: none;  
+}
+
+.accordion__description-wrapper_opened {
+  display: flex;
+}
