@@ -21,3 +21,9 @@ export interface Task3Block {
   description: string;
   imageUrl: string;
 }
+
+export interface Task4FormRequest {
+  name: string;
+  phone: string;
+  email: string;
+}

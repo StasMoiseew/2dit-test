@@ -1,0 +1,16 @@
+.input {
+
+}
+
+.input__field {
+  width: 100%;
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid #FFF;
+  outline: none;
+  padding: 13px 30px;
+}
+
+.input__field::-webkit-input-placeholder {color: #FFF;}
+.input__field::-moz-placeholder {color: #FFF;}
+.input__field:-moz-placeholder {color: #FFF;}
+.input__field:-ms-input-placeholder {color: #FFF;}  
