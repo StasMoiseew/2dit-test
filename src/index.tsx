@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import './assets/fonts/ProximaNova/proximanova_bold.otf';
+import './assets/fonts/ProximaNova/proximanova_regular.ttf';
+import './assets/fonts/Paragon/Parangon530C.ttf';
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );

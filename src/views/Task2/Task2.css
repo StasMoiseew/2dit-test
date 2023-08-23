@@ -1,0 +1,9 @@
+.task2 {
+  width: 80%;
+  font-family: 'Proxima Nova', Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 36px;
+}

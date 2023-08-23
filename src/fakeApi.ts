@@ -1,4 +1,4 @@
-import { Task1Accordion } from "./models";
+import { Product, Task1Accordion } from "./models";
 
 const fakeData = {
   task1response: `<p>Когда застройщик нарушает сроки сдачи по ДДУ, вы как дольщик имеете право требовать неустойку за просрочку, а также компенсацию убытков, вызванных этой просрочкой.</p>
@@ -30,6 +30,56 @@ const fakeData = {
       description: 'Reprehenderit excepteur ipsum fugiat cupidatat sunt aliqua. Nostrud sunt anim aliquip cupidatat dolore consectetur deserunt consectetur sint nisi. Cillum aliqua enim laborum non. Commodo veniam deserunt excepteur aliqua ipsum velit enim in culpa irure tempor aliqua tempor.'
     },
   ],
+  products: [
+    {
+      title: 'Театральное кресло Прайм',
+      vendor: '789-2341',
+      price: 6762,
+      imageUrl: 'https://i.ibb.co/VC7vtmc/Rectangle-6.png',
+      onStorage: true,
+      isHit: true,
+      category: 'Кресла театральные',
+    },
+    {
+      title: 'Театральное кресло Прайм',
+      vendor: '789-2341',
+      price: 6762,
+      imageUrl: 'https://i.ibb.co/VC7vtmc/Rectangle-6.png',
+      onStorage: true,
+      isSale: true,
+      category: 'Кресла театральные',
+    },
+    {
+      title: 'Театральное кресло Прайм',
+      vendor: '789-2341',
+      price: 6762,
+      imageUrl: 'https://i.ibb.co/VC7vtmc/Rectangle-6.png',
+      onStorage: true,
+      isNew: true,
+      category: 'Кресла театральные',
+    },
+    {
+      title: 'Театральное кресло Прайм',
+      vendor: '789-2341',
+      price: 6762,
+      imageUrl: 'https://i.ibb.co/VC7vtmc/Rectangle-6.png',
+      category: 'Кресла театральные',
+    },
+    {
+      title: 'Театральное кресло Прайм',
+      vendor: '789-2341',
+      price: 6762,
+      imageUrl: 'https://i.ibb.co/VC7vtmc/Rectangle-6.png',
+      category: 'Кресла театральные',
+    },
+    {
+      title: 'Театральное кресло Прайм',
+      vendor: '789-2341',
+      price: 6762,
+      imageUrl: 'https://i.ibb.co/VC7vtmc/Rectangle-6.png',
+      category: 'Кресла театральные',
+    },
+  ] as Product[],
 }
 
 export const fakeApi = {
@@ -39,6 +89,10 @@ export const fakeApi = {
   },
   task1accordionsRequest: async (): Promise<Task1Accordion[]> => {
     const response = await fakeData.task1accordions;
+    return response;
+  },
+  getProducts: async (): Promise<Product[]> => {
+    const response = await fakeData.products;
     return response;
   }
 }

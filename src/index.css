@@ -53,3 +53,24 @@ textarea{overflow:auto}
 optgroup{font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("ProximaNova"),
+   url("./assets/fonts/ProximaNova/proximanova_regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("ProximaNova"),
+   url("./assets/fonts/ProximaNova/proximanova_bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Paragon530C";
+  src: local("Paragon530C"),
+   url("./assets/fonts/Paragon/Parangon530C.ttf") format("truetype");
+  font-weight: 700;
+}

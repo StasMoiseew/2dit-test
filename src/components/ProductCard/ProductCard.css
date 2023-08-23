@@ -1,0 +1,127 @@
+.product-card {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 290px;
+}
+
+.product-card__image {
+  width: 100%;
+  height: 100%;
+}
+
+.product-card__info-wrapper {
+  padding: 15px 12.5px;
+  width: calc(100% - 25px);
+  background-color: #EFF5F5;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card__category {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6E6659;
+  margin-bottom: 10px;
+}
+
+.product-card__title {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  color: #264E58;
+  margin-bottom: 10px;
+}
+
+.product-card__vendor {
+  font-weight: 400;
+  font-size: 14px;
+  color: #264E58;
+  margin-bottom: 10px;
+}
+
+.product-card__vendor-label {
+  color: #A5A5A5;
+}
+
+.product-card__price {
+  font-weight: 700;
+  font-size: 24px;
+  color: #6E6659;
+  line-height: 29.23px;
+}
+
+.product-card__price-label,
+.product-card__price-sign {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.product-card__price-label {
+  color: #A5A5A5;
+}
+
+.product-card__price-sign {
+  color: #C4C4C4;
+}
+
+.product-card__badge {
+  position: absolute;
+  font-family: 'Paragon530C', Helvetica, sans-serif;
+  font-size: 8px;
+  padding: 4px 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.product-card__badge-icon {
+  width: 6px;
+  height: 6px;
+  margin-right: 4px;
+}
+
+.product-card__badge_hit,
+.product-card__badge_sale,
+.product-card__badge_new {
+  top: 15px;
+  left: 15px;
+}
+
+.product-card__badge_hit {
+  background-color: #A32018;
+}
+
+.product-card__badge_sale {
+  background-color: #E0CD1C;
+}
+
+.product-card__badge_new {
+  background-color: #087A28;
+}
+
+.product-card__on-storage {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 3px 5px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 400;
+  font-size: 8px;
+}
+
+.product-card__on-storage-icon {
+  width: 9px;
+  height: 9px;
+  margin-right: 2px;
+}
