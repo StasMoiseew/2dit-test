@@ -8,6 +8,10 @@ export const Task4: FC = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
 
+  const handleButtonClick = () => {
+    console.log("Button clicked!");
+  };
+
   return (
     <section className="task4">
       <form className="task4__form">
@@ -32,7 +36,9 @@ export const Task4: FC = () => {
         </div>
         <h3 className="task4__description">Нажимая кнопку, я принимаю пользовательское соглашение, соглашаюсь с политикой<p>конфиденциальности, условиями пользования сайтом, передачей и обработкой моих</p> персональных данных</h3>
         <div className="button__block">
-          <button className="task4__button">Оформить заявку</button>
+          <button className="task4__button" onClick={handleButtonClick}>
+            Оформить заявку
+          </button>
           </div>
       </form>
     </section>
