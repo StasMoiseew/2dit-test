@@ -27,8 +27,13 @@ export const Task4: FC = () => {
             placeholder="+7 (___) ___-__-__"
             isPhone
           />
-          <Input className="task4__input" value={email} onChange={setEmail} isEmail />
+          <Input className="task4__input" value={email} onChange={setEmail} isEmail placeholder="Введите Email" />
+          
         </div>
+        <h3 className="task4__description">Нажимая кнопку, я принимаю пользовательское соглашение, соглашаюсь с политикой<p>конфиденциальности, условиями пользования сайтом, передачей и обработкой моих</p> персональных данных</h3>
+        <div className="button__block">
+          <button className="task4__button">Оформить заявку</button>
+          </div>
       </form>
     </section>
   );

@@ -6,8 +6,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle, rgba(106,49,45,1) 0%, rgba(0,0,0,1) 100%);
-
+  background-image: url('https://wmpics.space/dm-4PMP.png');
+  background-size: cover;
+  background-position: center;
   font-family: 'GothamPro', Helvetica, sans-serif;
   color: #FFF;
 }
@@ -34,10 +35,17 @@
   font-weight: 400;
 }
 
+.task4__description {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
 .task4__inputs {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  margin-bottom: -170px;
 }
 
 .task4__input {
@@ -47,4 +55,25 @@
 
 .task4__input:not(:last-child) {
   margin-right: 100px;
+  margin-bottom: 200px;
+}
+
+.button__block {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.task4__button {
+  background-color: #fff;
+  color: black;
+  padding: 14px 84px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: center;
+}
+
+.task4__button:hover {
+  background-color: gray;
 }
